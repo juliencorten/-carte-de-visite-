@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julien Corten — Sculpteur</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      color: #f0ece4;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .logo-wrap {
+      margin-bottom: 32px;
+    }
+
+    .logo-wrap img {
+      width: 160px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #f0ece4;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      color: #8a8070;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-list a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: #f0ece4;
+      font-size: 15px;
+      padding: 14px 18px;
+      background: #161616;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .contact-list a:hover {
+      background: #1e1e1e;
+      border-color: #c9a84c;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    .btn-add {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      background: #c9a84c;
+      color: #0a0a0a;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-add:hover { background: #e0bc60; }
+    .btn-add:active { transform: scale(0.98); }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 11px;
+      color: #444;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="logo-wrap">
+      <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" width="160" height="80" aria-label="Julien Corten logo">
+        <rect width="160" height="80" fill="#0a0a0a"/>
+        <text x="80" y="32" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="800" fill="#f0ece4" letter-spacing="4">JULIEN</text>
+        <text x="80" y="52" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="800" fill="#f0ece4" letter-spacing="4">CORTEN</text>
+        <line x1="20" y1="60" x2="140" y2="60" stroke="#c9a84c" stroke-width="1"/>
+        <text x="80" y="73" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="400" fill="#8a8070" letter-spacing="3">CRÉATION MÉTAL VERRE</text>
+      </svg>
+    </div>
+
+    <h1>Julien Corten</h1>
+    <p class="subtitle">Sculpteur &amp; Artiste</p>
+
+    <ul class="contact-list">
+      <li>
+        <a href="tel:+33685848146">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.07 2.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          +33 6 85 84 81 46
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@juliencorten.fr">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="2,4 12,13 22,4"/>
+          </svg>
+          info@juliencorten.fr
+        </a>
+      </li>
+      <li>
+        <a href="https://juliencorten.fr" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          juliencorten.fr
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/julien_corten" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          @julien_corten
+        </a>
+      </li>
+      <li>
+        <a href="https://facebook.com/juliencortensculpture" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+          juliencortensculpture
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn-add" href="julien-corten.vcf">
+      + Ajouter à mes contacts
+    </a>
+
+    <p class="footer">Clairegoutte · Haute-Saône · France</p>
+  </div>
+</body>
+</html>
